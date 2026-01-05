@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Enfant Magique et le Roi Dragon - Théâtre du Petit Miroir</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #60666d;
+            line-height: 1.6;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 20px 24px;
+            background-color: #ffffff;
+        }
+
+        .header a {
+            color: #c3ced9;
+            text-decoration: none;
+            font-size: 26px;
+            font-family: 'Roboto', Tahoma, sans-serif;
+        }
+
+        .content {
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #44a8c7;
+            font-size: 22px;
+            line-height: 31px;
+            font-family: 'Cabin', Avenir, sans-serif;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        h1.title {
+            color: #e45d6b;
+        }
+
+        .subtitle {
+            color: #e45d6b;
+            font-size: 16px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .animation-info {
+            font-size: 17px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cta-link {
+            display: inline-block;
+            color: #5c91ad;
+            text-decoration: underline;
+            margin: 20px 0;
+        }
+
+        .cta-link:hover {
+            opacity: 0.8;
+        }
+
+        .price {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+
+        .contact {
+            font-size: 17px;
+            font-weight: bold;
+            color: #d4be31;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            color: #0aad36;
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        .press {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .press h3 {
+            color: #0d070d;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .press p {
+            color: #0d070d;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .international {
+            color: #404040;
+        }
+
+        .footer {
+            background-color: #f5f7fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-buttons {
+            margin: 20px 0;
+        }
+
+        .social-button {
+            display: inline-block;
+            background-color: #7b7c7d;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .social-button:hover {
+            opacity: 0.8;
+        }
+
+        .footer-links {
+            font-size: 12px;
+            color: #b9b9b9;
+            margin: 15px 0;
+        }
+
+        .footer-links a {
+            color: #b9b9b9;
+            text-decoration: underline;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.8;
+        }
+
+        .spacer {
+            height: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 619px) {
+            .header a {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            .animation-info {
+                font-size: 15px;
+            }
+
+            .price {
+                font-size: 14px;
+            }
+
+            .contact {
+                font-size: 15px;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .social-button {
+                display: block;
+                margin: 10px auto;
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .container {
+                min-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Balises webview de Mautic -->
+    <div style="display:none">
+        <img src="{webview_url}" alt=""/>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <a href="#">le théâtre du Petit Miroir présente</a>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="content">
+            <h1>Nous venons dans votre ecole</h1>
+            <h1 class="title">L'ENFANT MAGIQUE ET LE ROI DRAGON</h1>
+            <p class="subtitle">Spectacle musical d'ombres chinoises</p>
+            <p class="animation-info">animation après la représentation</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- Image principale -->
+        <div class="image-container">
+            <a href="#">
+                <img src="https://raw.githubusercontent.com/JIMROCKBAN/lozhaprimaire/main/lozhaetledragon300dpi3.jpg" alt="L'Enfant Magique et le Roi Dragon">
+            </a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- Informations et CTA -->
+        <div class="content">
+            <p><a class="cta-link" href="#">VIDEO DU SPECTACLE CLIQUEZ ICI</a></p>
+            <p class="price">TARIF: 750 € 1 représentation avec animation jusqu'à 4 cours</p>
+            <p class="contact">RÉSERVATION et RENSEIGNEMENTS: 06 83 08 81 99</p>
+            <p><a class="cta-link" href="mailto:contact@petitmiroir.com">contact@petitmiroir.com</a></p>
+            <p><a class="cta-link" href="#">Visitez notre site</a></p>
+            <p class="highlight"><strong>L'Enfant magique et le Roi Dragon</strong> est le premier spectacle à avoir été Invité par le musée du Quai Branly Jacques Chirac</p>
+
+            <!-- Revue de presse -->
+            <div class="press">
+                <h2 style="text-align: center; margin: 30px 0 20px;">L'enfant Magique vu par la presse</h2>
+                
+                <h3>Le Nouvel Observateur</h3>
+                <p>Jean-Luc Penso anime de délicates ombres chinoises pour conter en musique les aventures de Lozha, l'enfant magique.</p>
+
+                <h3>Télérama</h3>
+                <p>Les ombres sont de véritables objets d'art ... Magnifique</p>
+
+                <h3>Le Parisien</h3>
+                <p>Un spectacle d'ombres chinoises envoûtant.</p>
+                <p>Gros coup de coeur pour "L'Enfant Magique et le roi Dragon". Les enfants sont suspendus aux péripéties de Lozha qui possède des pouvoirs magiques d'une efficacité redoutable.</p>
+
+                <h3>Le Monde</h3>
+                <p>Dépaysement assuré pour ce spectacle d'ombres. Aventures, rebondissements, ruses et moqueries d'après un récit mythologique, conté et mis en scène par un maître du genre, Jean-Luc Penso. Un ravissement.</p>
+
+                <h3>Le Midi Libre</h3>
+                <p>Ce spectacle fut tout simplement un ravissement. A l'émerveillement du spectacle des ombres s'ajoutait une musique rare et superbe.</p>
+
+                <h3>Nice-Matin</h3>
+                <p>Un public composé d'enfants et d'adultes enchanté, il y eut de quoi s'étonner devant l'écran blanc sur lequel défilait des morceaux de rêves.</p>
+
+                <h2 style="text-align: center; margin: 30px 0 20px;" class="international">... Et par la presse étrangère</h2>
+
+                <h3 class="international">Macau Daily Nouvelles (Chine)</h3>
+                <p>Un Français fait revivre toute la magie du théâtre d'ombres ... La musique, les lumières et les décors, ajoutent à la réussite du spectacle.</p>
+
+                <h3 class="international">Novaya Gazeta (Moscou)</h3>
+                <p>Jean-Luc Penso: un homme-théâtre absolu. A le regarder depuis les coulisses on le voit à chaque seconde décrocher ses petites figurines en peau de Buffle, colorées et translucides, les poser sur l'écran blanc pour les manipuler et appuyer sur des boutons invisibles tout en dansant</p>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <!-- Footer avec boutons sociaux -->
+        <div class="footer">
+            <div class="social-buttons">
+                <a class="social-button" href="#">📱 Partager</a>
+                <a class="social-button" href="#">🐦 Tweet</a>
+                <a class="social-button" href="#">💼 Partager</a>
+                <a class="social-button" href="#">📧 Transférer</a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="{webview_url}">Version web</a> | 
+                <a href="{unsubscribe_url}">Se désinscrire</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Balise unsubscribe de Mautic -->
+    <img src="{tracking_pixel}" alt="" style="display:none" />
+</body>
+</html>

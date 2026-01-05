@@ -1,0 +1,12 @@
+# Fichiers temporaires
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Fichiers de backup
+lozhaprimaire_old.html
+
+# Dossiers
+node_modules/
+.vscode/
