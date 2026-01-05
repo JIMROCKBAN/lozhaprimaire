@@ -1,321 +1,175 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>L'Enfant Magique et le Roi Dragon - Théâtre du Petit Miroir</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        @media only screen and (min-width: 620px){
+            .column{}.wrapper{min-width:600px !important}
+            .wrapper h1{font-size:26px !important;line-height:34px !important}
+            .wrapper h2{font-size:20px !important;line-height:28px !important}
         }
-
-        body {
-            font-family: 'Open Sans', Arial, sans-serif;
-            background-color: #f5f7fa;
-            color: #60666d;
-            line-height: 1.6;
-            -webkit-text-size-adjust: 100%;
+        .main, .mso {margin: 0;padding: 0;}
+        table {border-collapse: collapse;table-layout: fixed;}
+        * {line-height: inherit;}
+        [x-apple-data-detectors] {color: inherit !important;text-decoration: none !important;}
+        .wrapper .footer__share-button a:hover, .wrapper .footer__share-button a:focus {color: #ffffff !important;}
+        .btn a:hover, .btn a:focus, .footer__share-button a:hover, .footer__share-button a:focus, .email-footer__links a:hover, .email-footer__links a:focus {opacity: 0.8;}
+        .preheader, .header, .layout, .column {transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;}
+        .preheader td {padding-bottom: 8px;}
+        .layout, div.header {max-width: 400px !important;-fallback-width: 95% !important;width: calc(100% - 20px) !important;}
+        div.preheader {max-width: 360px !important;-fallback-width: 90% !important;width: calc(100% - 60px) !important;}
+        .snippet, .webversion {Float: none !important;}
+        .stack .column {max-width: 400px !important;width: 100% !important;}
+        .fixed-width.has-border {max-width: 402px !important;}
+        .fixed-width.has-border .layout__inner {box-sizing: border-box;}
+        .snippet, .webversion {width: 50% !important;}
+        .mso .layout__edges {font-size: 0;}
+        .layout-fixed-width, .mso .layout-full-width {background-color: #ffffff;}
+        
+        @media only screen and (min-width: 620px) {
+            .column, .gutter {display: table-cell;Float: none !important;vertical-align: top;}
+            div.preheader, .email-footer {max-width: 560px !important;width: 560px !important;}
+            .snippet, .webversion {width: 280px !important;}
+            div.header, .layout, .one-col .column {max-width: 600px !important;width: 600px !important;}
+            .fixed-width.has-border, .fixed-width.x_has-border, .has-gutter.has-border, .has-gutter.x_has-border {max-width: 602px !important;width: 602px !important;}
         }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
+        
+        @media(max-width: 619px) {
+            .email-flexible-footer .left-aligned-footer .column, .email-flexible-footer .center-aligned-footer, .email-flexible-footer .right-aligned-footer .column {max-width: 100% !important;text-align: center !important;width: 100% !important;}
+            .flexible-footer-logo {margin-left: 0px !important;margin-right: 0px !important;}
+            .email-flexible-footer .left-aligned-footer .flexible-footer__share-button__container, .email-flexible-footer .center-aligned-footer .flexible-footer__share-button__container, .email-flexible-footer .right-aligned-footer .flexible-footer__share-button__container {display: inline-block;margin-left: 5px !important;margin-right: 5px !important;}
         }
-
-        .header {
-            text-align: center;
-            padding: 30px 20px 24px;
-            background-color: #ffffff;
+        
+        @media (max-width: 321px) {
+            .fixed-width.has-border .layout__inner {border-width: 1px 0 !important;}
+            .layout, .stack .column {min-width: 320px !important;width: 320px !important;}
+            .border {display: none;}
+            .has-gutter .border {display: table-cell;}
         }
-
-        .header a {
-            color: #c3ced9;
-            text-decoration: none;
-            font-size: 26px;
-            font-family: 'Roboto', Tahoma, sans-serif;
-        }
-
-        .content {
-            padding: 24px 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #44a8c7;
-            font-size: 22px;
-            line-height: 31px;
-            font-family: 'Cabin', Avenir, sans-serif;
-            font-weight: normal;
-            margin-bottom: 20px;
-        }
-
-        h1.title {
-            color: #e45d6b;
-        }
-
-        .subtitle {
-            color: #e45d6b;
-            font-size: 16px;
-            font-weight: bold;
-            font-style: italic;
-            margin: 20px 0;
-        }
-
-        .animation-info {
-            font-size: 17px;
-            font-style: italic;
-            margin: 20px 0;
-        }
-
-        .image-container {
-            margin: 20px 0;
-        }
-
-        .image-container img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .cta-link {
-            display: inline-block;
-            color: #5c91ad;
-            text-decoration: underline;
-            margin: 20px 0;
-        }
-
-        .cta-link:hover {
-            opacity: 0.8;
-        }
-
-        .price {
-            font-size: 16px;
-            margin: 20px 0;
-        }
-
-        .contact {
-            font-size: 17px;
-            font-weight: bold;
-            color: #d4be31;
-            margin: 20px 0;
-        }
-
-        .highlight {
-            color: #0aad36;
-            font-style: italic;
-            margin: 20px 0;
-        }
-
-        .press {
-            text-align: left;
-            margin: 20px 0;
-        }
-
-        .press h3 {
-            color: #0d070d;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .press p {
-            color: #0d070d;
-            font-style: italic;
-            font-weight: bold;
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
-
-        .international {
-            color: #404040;
-        }
-
-        .footer {
-            background-color: #f5f7fa;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .social-buttons {
-            margin: 20px 0;
-        }
-
-        .social-button {
-            display: inline-block;
-            background-color: #7b7c7d;
-            color: white;
-            padding: 8px 12px;
-            margin: 5px;
-            text-decoration: none;
-            border-radius: 2px;
-            font-size: 11px;
-            font-weight: bold;
-        }
-
-        .social-button:hover {
-            opacity: 0.8;
-        }
-
-        .footer-links {
-            font-size: 12px;
-            color: #b9b9b9;
-            margin: 15px 0;
-        }
-
-        .footer-links a {
-            color: #b9b9b9;
-            text-decoration: underline;
-        }
-
-        .footer-links a:hover {
-            opacity: 0.8;
-        }
-
-        .spacer {
-            height: 20px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 619px) {
-            .header a {
-                font-size: 20px;
-            }
-
-            h1 {
-                font-size: 18px;
-                line-height: 26px;
-            }
-
-            .subtitle {
-                font-size: 14px;
-            }
-
-            .animation-info {
-                font-size: 15px;
-            }
-
-            .price {
-                font-size: 14px;
-            }
-
-            .contact {
-                font-size: 15px;
-            }
-
-            .content {
-                padding: 20px 15px;
-            }
-
-            .social-button {
-                display: block;
-                margin: 10px auto;
-                max-width: 200px;
-            }
-        }
-
-        @media (max-width: 320px) {
-            .container {
-                min-width: 320px;
-            }
-        }
+        
+        .main,.mso{background-color:#f5f7fa}
+        .logo a:hover,.logo a:focus{color:#859bb1 !important}
+        .footer-logo a:hover,.footer-logo a:focus{color:#372d1b !important}
+        .mso .layout-has-border{border-top:1px solid #b1c1d8;border-bottom:1px solid #b1c1d8}
+        .mso .layout-has-bottom-border{border-bottom:1px solid #b1c1d8}
+        .mso .border{background-color:#b1c1d8}
+        .mso h1{font-size:26px !important;line-height:34px !important}
+        .mso h2{font-size:20px !important;line-height:28px !important}
+        .mso .footer__share-button p{font-family:Open Sans,sans-serif}
     </style>
+    <meta name="x-apple-disable-message-reformatting">
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic|Open+Sans:400italic,700italic,700,400|Roboto:400,700,400italic,700italic);
+    </style>
+    <meta name="robots" content="noindex,nofollow">
 </head>
-<body>
+<body class="main full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
     <!-- Balises webview de Mautic -->
     <div style="display:none">
         <img src="{webview_url}" alt=""/>
     </div>
+    
+    <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #f5f7fa;" cellpadding="0" cellspacing="0" role="presentation">
+        <tbody>
+            <tr>
+                <td>
+                    <div role="banner">
+                        <div class="preheader" style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 167440px);">
+                            <div style="border-collapse: collapse;display: table;width: 100%;">
+                                <div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #b9b9b9;font-family: Open Sans,sans-serif;">
+                                    <p style="Margin-top: 0;Margin-bottom: 0;">Ombres chinoises authentiques</p>
+                                </div>
+                                <div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #b9b9b9;font-family: Open Sans,sans-serif;">
+                                    <p style="Margin-top: 0;Margin-bottom: 0;">Pas d'images ? <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b9b9b9;" href="{webview_url}">Version web</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+                            <div class="logo emb-logo-margin-box" style="font-size: 26px;line-height: 32px;Margin-top: 30px;Margin-bottom: 24px;color: #c3ced9;font-family: Roboto,Tahoma,sans-serif;Margin-left: 20px;Margin-right: 20px;" align="center">
+                                <div class="logo-center" style="font-size:26px !important;line-height:32px !important;" align="center">
+                                    <a style="text-decoration: none;transition: opacity 0.1s ease-in;color: #c3ced9;" href="https://www.theatredupetitmiroir.com/">le théâtre du Petit Miroir présente</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+                            <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+                                <div class="column" style="text-align: left;color: #60666d;font-size: 14px;line-height: 21px;font-family: Open Sans,sans-serif;">
+                                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
+                                        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                                            <h1 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #44a8c7;font-size: 22px;line-height: 31px;font-family: Cabin,Avenir,sans-serif;text-align: center;">Nous venons dans votre ecole</h1>
+                                            <h1 style="Margin-top: 20px;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #44a8c7;font-size: 22px;line-height: 31px;font-family: Cabin,Avenir,sans-serif;text-align: center;"><span style="text-decoration: inherit;color: #e45d6b;">L'ENFANT MAGIQUE ET LE ROI DRAGON</span></h1>
+                                            <p class="size-16" style="Margin-top: 20px;Margin-bottom: 0;font-size: 16px;line-height: 24px;text-align: center;"><span style="text-decoration: inherit;color: #e45d6b;"><strong><em>Spectacle musical d'ombres chinoises</em></strong></span></p>
+                                            <p class="size-18" style="Margin-top: 20px;Margin-bottom: 0;font-size: 17px;line-height: 26px;text-align: center;"><em>animation après la représentation</em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <a href="#">le théâtre du Petit Miroir présente</a>
-        </div>
+                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
 
-        <!-- Contenu principal -->
-        <div class="content">
-            <h1>Nous venons dans votre ecole</h1>
-            <h1 class="title">L'ENFANT MAGIQUE ET LE ROI DRAGON</h1>
-            <p class="subtitle">Spectacle musical d'ombres chinoises</p>
-            <p class="animation-info">animation après la représentation</p>
-        </div>
+                        <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+                            <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+                                <div class="column" style="text-align: left;color: #60666d;font-size: 14px;line-height: 21px;font-family: Open Sans,sans-serif;">
+                                    <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+                                        <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #5c91ad;" href="https://www.youtube.com/watch?v=_GsBTxsf9iY">
+                                            <img class="gnd-corner-image gnd-corner-image-center gnd-corner-image-top gnd-corner-image-bottom" style="border: 0;display: block;height: auto;width: 100%;max-width: 900px;" alt="L'Enfant Magique et le Roi Dragon" width="600" src="https://raw.githubusercontent.com/JIMROCKBAN/lozhaprimaire/main/lozhaetledragon300dpi3.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="spacer"></div>
+                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
 
-        <!-- Image principale -->
-        <div class="image-container">
-            <a href="#">
-                <img src="https://raw.githubusercontent.com/JIMROCKBAN/lozhaprimaire/main/lozhaetledragon300dpi3.jpg" alt="L'Enfant Magique et le Roi Dragon">
-            </a>
-        </div>
+                        <div class="layout one-col fixed-width stack" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+                            <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
+                                <div class="column" style="text-align: left;color: #60666d;font-size: 14px;line-height: 21px;font-family: Open Sans,sans-serif;">
+                                    <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;Margin-bottom: 24px;">
+                                        <div style="mso-line-height-rule: exactly;mso-text-raise: 11px;vertical-align: middle;">
+                                            <h1 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #44a8c7;font-size: 22px;line-height: 31px;font-family: Cabin,Avenir,sans-serif;text-align: center;">&nbsp;</h1>
+                                            <p style="Margin-top: 20px;Margin-bottom: 0;text-align: center;"><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #5c91ad;" href="https://www.youtube.com/watch?v=_GsBTxsf9iY">VIDEO DU SPECTACLE CLIQUEZ ICI</a></p>
+                                            <p style="Margin-top: 20px;Margin-bottom: 0;text-align: center;">TARIF: 750 € 1 représentation avec animation jusqu'à 4 cours&nbsp;</p>
+                                            <p class="size-18" style="Margin-top: 20px;Margin-bottom: 0;font-size: 17px;line-height: 26px;text-align: center;"><strong><span style="text-decoration: inherit;color: #d4be31;">RÉSERVATION et RENSEIGNEMENTS: 06 83 08 81 99</span></strong></p>
+                                            <p style="Margin-top: 20px;Margin-bottom: 0;text-align: center;"><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #5c91ad;" href="mailto:theatredupetitmiroir@gmail.com">theatredupetitmiroir@gmail.com</a></p>
+                                            <p style="Margin-top: 20px;Margin-bottom: 0;text-align: center;"><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #5c91ad;" href="https://www.theatredupetitmiroir.com/">Visitez notre site</a></p>
+                                            <p style="Margin-top: 20px;Margin-bottom: 0;text-align: center;"><em><span style="text-decoration: inherit;color: #0aad36;"><strong>L'Enfant magique et le Roi Dragon</strong> est le premier spectacle à avoir été Invité par le musée du Quai Branly Jacques Chirac</span></em></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="spacer"></div>
-
-        <!-- Informations et CTA -->
-        <div class="content">
-            <p><a class="cta-link" href="#">VIDEO DU SPECTACLE CLIQUEZ ICI</a></p>
-            <p class="price">TARIF: 750 € 1 représentation avec animation jusqu'à 4 cours</p>
-            <p class="contact">RÉSERVATION et RENSEIGNEMENTS: 06 83 08 81 99</p>
-            <p><a class="cta-link" href="mailto:contact@petitmiroir.com">contact@petitmiroir.com</a></p>
-            <p><a class="cta-link" href="#">Visitez notre site</a></p>
-            <p class="highlight"><strong>L'Enfant magique et le Roi Dragon</strong> est le premier spectacle à avoir été Invité par le musée du Quai Branly Jacques Chirac</p>
-
-            <!-- Revue de presse -->
-            <div class="press">
-                <h2 style="text-align: center; margin: 30px 0 20px;">L'enfant Magique vu par la presse</h2>
-                
-                <h3>Le Nouvel Observateur</h3>
-                <p>Jean-Luc Penso anime de délicates ombres chinoises pour conter en musique les aventures de Lozha, l'enfant magique.</p>
-
-                <h3>Télérama</h3>
-                <p>Les ombres sont de véritables objets d'art ... Magnifique</p>
-
-                <h3>Le Parisien</h3>
-                <p>Un spectacle d'ombres chinoises envoûtant.</p>
-                <p>Gros coup de coeur pour "L'Enfant Magique et le roi Dragon". Les enfants sont suspendus aux péripéties de Lozha qui possède des pouvoirs magiques d'une efficacité redoutable.</p>
-
-                <h3>Le Monde</h3>
-                <p>Dépaysement assuré pour ce spectacle d'ombres. Aventures, rebondissements, ruses et moqueries d'après un récit mythologique, conté et mis en scène par un maître du genre, Jean-Luc Penso. Un ravissement.</p>
-
-                <h3>Le Midi Libre</h3>
-                <p>Ce spectacle fut tout simplement un ravissement. A l'émerveillement du spectacle des ombres s'ajoutait une musique rare et superbe.</p>
-
-                <h3>Nice-Matin</h3>
-                <p>Un public composé d'enfants et d'adultes enchanté, il y eut de quoi s'étonner devant l'écran blanc sur lequel défilait des morceaux de rêves.</p>
-
-                <h2 style="text-align: center; margin: 30px 0 20px;" class="international">... Et par la presse étrangère</h2>
-
-                <h3 class="international">Macau Daily Nouvelles (Chine)</h3>
-                <p>Un Français fait revivre toute la magie du théâtre d'ombres ... La musique, les lumières et les décors, ajoutent à la réussite du spectacle.</p>
-
-                <h3 class="international">Novaya Gazeta (Moscou)</h3>
-                <p>Jean-Luc Penso: un homme-théâtre absolu. A le regarder depuis les coulisses on le voit à chaque seconde décrocher ses petites figurines en peau de Buffle, colorées et translucides, les poser sur l'écran blanc pour les manipuler et appuyer sur des boutons invisibles tout en dansant</p>
-            </div>
-        </div>
-
-        <div class="spacer"></div>
-
-        <!-- Footer avec boutons sociaux -->
-        <div class="footer">
-            <div class="social-buttons">
-                <a class="social-button" href="#">📱 Partager</a>
-                <a class="social-button" href="#">🐦 Tweet</a>
-                <a class="social-button" href="#">💼 Partager</a>
-                <a class="social-button" href="#">📧 Transférer</a>
-            </div>
-            
-            <div class="footer-links">
-                <a href="{webview_url}">Version web</a> | 
-                <a href="{unsubscribe_url}">Se désinscrire</a>
-            </div>
-        </div>
-    </div>
-
+                        <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
+                    </div>
+                    
+                    <div role="contentinfo">
+                        <div style="line-height:0px;font-size:0px;">&nbsp;</div>
+                        <div class="layout email-flexible-footer email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
+                            <div class="layout__inner left-aligned-footer" style="border-collapse: collapse;display: table;width: 100%;">
+                                <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #b9b9b9;font-family: Open Sans,sans-serif;">
+                                    <div style="margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-bottom: 10px;">
+                                        <div class="email-footer__additional-info" style="font-size: 12px;line-height: 19px;margin-bottom: 15px;">
+                                            <span><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b9b9b9;" href="{webview_url}">Version web</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                                            <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #b9b9b9;" href="{unsubscribe_url}">Se désinscrire</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="line-height:0px;font-size:0px;">&nbsp;</div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
     <!-- Balise unsubscribe de Mautic -->
     <img src="{tracking_pixel}" alt="" style="display:none" />
 </body>
